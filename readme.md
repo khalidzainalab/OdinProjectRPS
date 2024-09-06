@@ -19,3 +19,13 @@ This function will randomly return rock paper scissors
 7) return computerChoice at the end.
 
 ---
+Human Choice
+
+Create a function called getHumanChoice to get the user's input whether they want to play Rock, Paper or Scissors.
+The user input must be able to accomodate any sort of variation in uppercaes and lowercase
+
+1) Create the function scope getHumanChoice
+2) Initialize a variable called userInput with the prompt method to get the user input
+3) Initialize variable called humanChoice that passes a toLowerCase() method to userInput.
+4) If human choice != Rock, paper scissors - raise Error and reprompt user to key in a valid choice.
+5) else return the variable humanChoice
