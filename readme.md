@@ -1,6 +1,7 @@
 # This is a project submission for The Odin Project
 
 ## Rock Paper Scissors Game
+This project is to create a game of rock paper scissors which allow you to input your answers and play against a computer.
 
 Planning 
 ---
