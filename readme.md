@@ -46,10 +46,12 @@ Upon playing the round, the winner gets their score incremented and the function
 
 1) Create new function named playRound with parameters humanChoice and computerChoice.
 2) Initialize an object beatenBy to show the winner logic
-3) Scissor beats paper
-4) Paper beats rock
-5) Rock beats scissor
-6) If humanChoice === computerChoice return draw statement
-7) Else if the human choice beats computerChoice, += humanScore and return winner statement
-8) Else += computerScore and return loser statement.
+3) If humanchoice is "rock" , beatenBy['Rock'] would correspond to scissors as rock beats scissors.
+4) If humanchoice is "paper" , beatenBy['paper'] would correspond to rock as paper beat rock.
+5) If humanchoice is "scissors", beatenBy['scissors'] would correspond to paper as scissors beat paper.
+6) if humanChoice is same as computerChoice, return draw statement and do nothing to scores
+7) if beatenBy[humanChoice]'s corresponding value is === computerChoice (means that the combination is identical to the object referenced) increment score for humanScore and return winner statement
+8) else increase computerScore and return loser statement.
+
+
 
