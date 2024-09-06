@@ -1,6 +1,7 @@
 /* global variables that are declared to be passed on to other function scopes */
 
 let computerChoice = ''; /* initalize empty variable to store computerChoice*/
+let humanChoice = '';
 
 
 
@@ -20,3 +21,7 @@ function getComputerChoice(){
 } 
 
 console.log(getComputerChoice());
+
+function getHumanChoice(){
+    
+}
