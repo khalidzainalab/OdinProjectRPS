@@ -2,6 +2,8 @@
 
 let computerChoice = ''; /* initalize empty variable to store computerChoice*/
 let humanChoice = '';
+let humanScore= 0;
+let computerScore = 0;
 
 
 
