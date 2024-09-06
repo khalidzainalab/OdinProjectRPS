@@ -26,6 +26,6 @@ The user input must be able to accomodate any sort of variation in uppercaes and
 
 1) Create the function scope getHumanChoice
 2) Initialize a variable called userInput with the prompt method to get the user input
-3) Initialize variable called humanChoice that passes a toLowerCase() method to userInput.
+3) Initialize global variable called humanChoice that passes a toLowerCase() method to userInput.
 4) If human choice != Rock, paper scissors - raise Error and reprompt user to key in a valid choice.
 5) else return the variable humanChoice
