@@ -19,7 +19,7 @@ function getComputerChoice(){
     }
     return computerChoice;
 } 
-
+console.log(getComputerChoice());
 
 function getHumanChoice(){
     let humanChoice = '';
@@ -35,5 +35,24 @@ function getHumanChoice(){
 }
 
 function playRound(humanChoice, computerChoice){
+    const beatenBy = {
+        'rock': 'scissors',
+        'paper' : 'rock',
+        'scissors' : 'paper'
+    };
    
+    if (humanChoice === computerChoice) {
+        return console.log(`The game is a draw, computer answered ${computerChoice}. Score is still ${humanScore}-${computerScore}`);
+    } else if (beatenBy[humanChoice] === computerChoice) {
+        humanScore += 1;
+        return console.log(`You won! computer answered ${computerChoice}. Score is ${humanScore}-${computerScore}`);
+    } else {
+        computerScore += 1;
+        return console.log(`You lost :(. Computer answered ${computerChoice}. Score is ${humanScore}-${computerScore}`);
+    }
 }
+
+const humanSelection = getHumanChoice();
+const computerSelection = getComputerChoice();
+
+playRound(humanSelection, computerSelection);
