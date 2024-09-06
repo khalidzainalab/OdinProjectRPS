@@ -23,5 +23,15 @@ function getComputerChoice(){
 console.log(getComputerChoice());
 
 function getHumanChoice(){
-    
+    let userInput = prompt("Rock, Paper or Scissors?", "Rock");
+    humanChoice = userInput.toLowerCase();
+    if (humanChoice === "rock" || humanChoice === "paper" || humanChoice === "scissors"){
+        
+    }else{
+        userInput = prompt("Invalid selection, must be rock, paper or scissors", "Rock");
+        humanChoice = userInput.toLowerCase();
+    }
+    return humanChoice;
 }
+
+console.log(getHumanChoice);
