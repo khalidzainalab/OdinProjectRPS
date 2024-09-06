@@ -37,3 +37,13 @@ Create 2 global variables called humanScore and computerScore which will be used
 
 1) Initialize variable called humanScore in the global scope with a value of 0
 2) Initialize variable called computerScore in the global scope with a value of 0
+
+---
+Play Round
+
+Create a new function called playRound that takes the human and computer player choices as arguments and play a single round.
+Upon playing the round, the winner gets their score incremented and the function prints out a winner announcement.
+
+1) Create new function named playRound with parameters humanChoice and computerChoice.
+2) Create corresponding if statements and increment scores accordingly. 
+3) Create a console.log() statement for the winner.
