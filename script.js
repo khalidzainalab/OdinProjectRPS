@@ -34,3 +34,6 @@ function getHumanChoice(){
     return humanChoice;
 }
 
+function playRound(humanChoice, computerChoice){
+   
+}

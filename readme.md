@@ -45,5 +45,11 @@ Create a new function called playRound that takes the human and computer player 
 Upon playing the round, the winner gets their score incremented and the function prints out a winner announcement.
 
 1) Create new function named playRound with parameters humanChoice and computerChoice.
-2) Create corresponding if statements and increment scores accordingly. 
-3) Create a console.log() statement for the winner.
+2) Initialize an object beatenBy to show the winner logic
+3) Scissor beats paper
+4) Paper beats rock
+5) Rock beats scissor
+6) If humanChoice === computerChoice return draw statement
+7) Else if the human choice beats computerChoice, += humanScore and return winner statement
+8) Else += computerScore and return loser statement.
+
