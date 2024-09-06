@@ -1,14 +1,12 @@
 /* global variables that are declared to be passed on to other function scopes */
 
-let computerChoice = ''; /* initalize empty variable to store computerChoice*/
-let humanChoice = '';
 let humanScore= 0;
 let computerScore = 0;
 
-
+/* -- functions -- */
 
 function getComputerChoice(){
-   
+    let computerChoice = '';
     switch (Math.floor(Math.random() * 3) + 1) {
         case 1:
             computerChoice = "rock";
@@ -24,6 +22,7 @@ function getComputerChoice(){
 
 
 function getHumanChoice(){
+    let humanChoice = '';
     let userInput = prompt("Rock, Paper or Scissors?", "Rock");
     humanChoice = userInput.toLowerCase();
     if (humanChoice === "rock" || humanChoice === "paper" || humanChoice === "scissors"){
