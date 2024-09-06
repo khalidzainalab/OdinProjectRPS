@@ -29,3 +29,11 @@ The user input must be able to accomodate any sort of variation in uppercase and
 3) Initialize global variable called humanChoice that passes a toLowerCase() method to userInput.
 4) If human choice != Rock, paper scissors - raise Error and reprompt user to key in a valid choice.
 5) else return the variable humanChoice
+
+--- 
+Scoring
+
+Create 2 global variables called humanScore and computerScore which will be used to store the scores respectively
+
+1) Initialize variable called humanScore in the global scope with a value of 0
+2) Initialize variable called computerScore in the global scope with a value of 0
