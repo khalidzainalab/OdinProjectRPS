@@ -19,7 +19,6 @@ function getComputerChoice(){
     }
     return computerChoice;
 } 
-console.log(getComputerChoice());
 
 function getHumanChoice(){
     let humanChoice = '';
@@ -52,7 +51,16 @@ function playRound(humanChoice, computerChoice){
     }
 }
 
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
 
-playRound(humanSelection, computerSelection);
+
+function playGame(){
+    let humanSelection 
+    while (humanScore < 5 && computerScore < 5){
+        let humanSelection = getHumanChoice();
+        let computerSelection = getComputerChoice();
+        playRound(humanSelection, computerSelection)
+        console.log("Starting new Round")
+    }
+}
+
+playGame();
