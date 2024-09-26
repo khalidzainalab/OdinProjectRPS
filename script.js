@@ -53,14 +53,27 @@ function playRound(humanChoice, computerChoice){
 
 
 
-function playGame(){
-    let humanSelection 
-    while (humanScore < 5 && computerScore < 5){
-        let humanSelection = getHumanChoice();
-        let computerSelection = getComputerChoice();
-        playRound(humanSelection, computerSelection)
-        console.log("Starting new Round")
-    }
-}
+// function playGame(){
+//     let humanSelection 
+//     while (humanScore < 5 && computerScore < 5){
+//         let humanSelection = getHumanChoice();
+//         let computerSelection = getComputerChoice();
+//         playRound(humanSelection, computerSelection)
+//         console.log("Starting new Round")
+//     }
+// }
 
-playGame();
+// playGame();
+
+/* UI */
+
+const buttons = document.querySelectorAll("button");
+
+buttons.forEach((button) => {
+    button.addEventListener("click" , () => {
+        const humanValue = button.id;
+        const computerValue = getComputerChoice();
+
+        return playRound(humanValue, computerValue);   
+    });
+});
