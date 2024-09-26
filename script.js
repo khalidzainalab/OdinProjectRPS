@@ -68,6 +68,7 @@ function playRound(humanChoice, computerChoice){
 /* UI */
 
 const buttons = document.querySelectorAll("button");
+const results = document.querySelector(".results");
 
 buttons.forEach((button) => {
     button.addEventListener("click" , () => {
