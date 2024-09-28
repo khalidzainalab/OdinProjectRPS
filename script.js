@@ -3,6 +3,12 @@
 let humanScore = 0;
 let computerScore = 0;
 
+const humanScoreText = document.getElementById("human-score");
+const computerScoreText = document.getElementById("enemy-score");
+
+humanScoreText.textContent = humanScore;
+computerScoreText.textContent = computerScore;
+
 /* -- functions -- */
 
 function getComputerChoice() {
@@ -52,9 +58,11 @@ function playRound(humanChoice, computerChoice) {
         return results.textContent = `The game is a draw, computer answered ${computerChoice}. Score is still ${humanScore}-${computerScore}`;
     } else if (beatenBy[humanChoice] === computerChoice) {
         humanScore += 1;
+        humanScoreText.textContent = humanScore;
         return results.textContent = `You won! computer answered ${computerChoice}. Score is ${humanScore}-${computerScore}`;
     } else {
         computerScore += 1;
+        computerScoreText.textContent = computerScore;
         return results.textContent = `You lost :(. Computer answered ${computerChoice}. Score is ${humanScore}-${computerScore}`;
     }
 }
@@ -77,10 +85,14 @@ buttons.forEach((button) => {
             results.textContent = 'You have won! reseting back to 0';
             humanScore = 0;
             computerScore = 0;
+            humanScoreText.textContent = humanScore;
+            computerScoreText.textContent = computerScore;
         } else if (computerScore == 5) {
             results.textContent = 'You have lost! reseting back to 0';
             humanScore = 0;
             computerScore = 0;
+            humanScoreText.textContent = humanScore;
+            computerScoreText.textContent = computerScore;
         }
     });
 });

@@ -1,5 +1,6 @@
 :root {
     --header: #F6E3BA;
+    --hover:  #FFD1DC;
 }
 
 * {
@@ -7,6 +8,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 
 /* header */
 .title {
@@ -43,18 +45,38 @@
 
 button {
     padding: 8px;
+    background-color: white;
+}
+
+button:hover {
+    background-color: var(--hover);
 }
 
 .image {
     width: 200px;
     height: 200px;
 }
+#human-score{
+    padding-bottom:2vh;
+    margin-top: -4vh;
+    
+}
+#enemy-score {
+    padding-bottom: 2vh;
+    margin-top: -1vh;
+}
+
+#human-score , #enemy-score{
+    font-size:42px;
+    text-align: right;
+     font-family: "Permanent Marker";
+}
 
 
 /* enemy profile */
 .enemy-profile {
+    margin-top: -4vh;
     display: flex;
-    padding-top: 1vh;
 }
 
 .divider {
@@ -68,10 +90,11 @@ button {
 
 .description-container {
     padding-left: 2vw;
-    margin-top: 5vh;
+    margin-top: 2vh;
 }
 
 .profile-icon {
+    margin-top: -3vh;
     width: 150px;
     height: 150px;
     border-radius: 50%;
