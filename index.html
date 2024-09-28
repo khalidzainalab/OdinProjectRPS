@@ -107,17 +107,17 @@
     </header>
     <main class="main">
         <div class="buttons">
-            <button id="rock">
+            <button class="button" id="rock">
                 <img class="image"
                     src="https://mymodernmet.com/wp/wp-content/uploads/2019/11/animal-rock-paintings-akie-nakata-11.jpg">
                 <span class="description">Rock</span>
             </button>
-            <button id="paper">
+            <button class="button" id="paper">
                 <img class="image"
                     src="https://images.kittyclysm.com/wp-content/uploads/2018/05/09174356/why-cats-lay-on-paper.jpg">
                 <span class="description">Paper</span>
             </button>
-            <button id="scissors">
+            <button class="button" id="scissors">
                 <img class="image" src="https://pbs.twimg.com/media/GNdRFMGXUAAZ240.jpg">
                 <span class="description">Scissors</span>
             </button>
@@ -132,9 +132,13 @@
                     <p class="description small"> GAOMING THE DESTROYER!</p>
                 </div>
                 <div class="enemy-selection">
-
+                    <button style="width:250px; height:250px;">
+                        <img class="image" id="enemy">
+                        <span class="description" id="enemy-description"></span>
+                    </button>
                 </div>
             </div>
+        </div>
         </div>
         <div class="results"></div>
         <div class="annoucement"></div>

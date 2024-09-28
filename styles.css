@@ -52,10 +52,11 @@ button {
 
 
 /* enemy profile */
-.enemy-profile{
-    display:flex;
+.enemy-profile {
+    display: flex;
     padding-top: 1vh;
 }
+
 .divider {
     margin-top: 5vh;
     border-bottom: 1px solid black;
@@ -65,7 +66,7 @@ button {
     font-size: 24px;
 }
 
-.description-container{
+.description-container {
     padding-left: 2vw;
     margin-top: 5vh;
 }
@@ -79,4 +80,19 @@ button {
 .description.small {
     display: block;
     padding-left: 4px;
+}
+.enemy-selection{
+    width: 425px;
+    display:flex;
+    justify-content: center;
+
+}
+#enemy {
+    display: none;
+    margin-left: 15px;
+
+}
+
+#enemy[src] {
+    display: block;
 }

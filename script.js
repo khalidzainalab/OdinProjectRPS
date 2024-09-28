@@ -7,15 +7,23 @@ let computerScore = 0;
 
 function getComputerChoice() {
     let computerChoice = '';
+    const computerSelection = document.getElementById('enemy');
+    const enemyDescription = document.getElementById('enemy-description')
     switch (Math.floor(Math.random() * 3) + 1) {
         case 1:
             computerChoice = "rock";
+            computerSelection.setAttribute("src", "https://mymodernmet.com/wp/wp-content/uploads/2019/11/animal-rock-paintings-akie-nakata-11.jpg");
+            enemyDescription.textContent = "Rock";
             break;
         case 2:
             computerChoice = "paper";
+            computerSelection.setAttribute("src", "https://images.kittyclysm.com/wp-content/uploads/2018/05/09174356/why-cats-lay-on-paper.jpg");
+            enemyDescription.textContent = "Paper";
             break;
         case 3:
             computerChoice = 'scissors';
+            computerSelection.setAttribute("src", "https://pbs.twimg.com/media/GNdRFMGXUAAZ240.jpg");
+            enemyDescription.textContent = "Scissors";
     }
     return computerChoice;
 }
@@ -54,7 +62,7 @@ function playRound(humanChoice, computerChoice) {
 
 /* UI */
 
-const buttons = document.querySelectorAll("button");
+const buttons = document.querySelectorAll(".button");
 const results = document.querySelector(".results");
 const announcement = document.querySelector('.announcement')
 
@@ -65,8 +73,6 @@ buttons.forEach((button) => {
         const computerValue = getComputerChoice();
 
         playRound(humanValue, computerValue);
-        console.log(humanScore);
-
         if (humanScore == 5) {
             results.textContent = 'You have won! reseting back to 0';
             humanScore = 0;
