@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./styles.css" <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 
 </head>
 
@@ -104,17 +105,41 @@
 	C96.391,230.435,91.294,229.164,87.37,231.521z" />
         </svg>
     </header>
-    <button id="rock">Rock</button>
-    <button id="paper">Paper</button>
-    <button id="scissors">Scissors</button>
+    <main class="main">
+        <div class="buttons">
+            <button id="rock">
+                <img class="image"
+                    src="https://mymodernmet.com/wp/wp-content/uploads/2019/11/animal-rock-paintings-akie-nakata-11.jpg">
+                <span class="description">Rock</span>
+            </button>
+            <button id="paper">
+                <img class="image"
+                    src="https://images.kittyclysm.com/wp-content/uploads/2018/05/09174356/why-cats-lay-on-paper.jpg">
+                <span class="description">Paper</span>
+            </button>
+            <button id="scissors">
+                <img class="image" src="https://pbs.twimg.com/media/GNdRFMGXUAAZ240.jpg">
+                <span class="description">Scissors</span>
+            </button>
+        </div>
+        <div class="divider"></div>
+        <div class="container">
+            <div class="enemy-profile">
+                <img class="profile-icon"
+                    src="https://preview.redd.it/warning-cat-abuse-chat-groups-v0-ur93wk5g0rkc1.png?width=603&format=png&auto=webp&s=f4d0a22be2a3242e19adb160102496477d8e1444">
+                <div class="description-container">
+                    <h1 class="title small"> YOUR OPPONENT</h1>
+                    <p class="description small"> GAOMING THE DESTROYER!</p>
+                </div>
+                <div class="enemy-selection">
 
+                </div>
+            </div>
+        </div>
+        <div class="results"></div>
+        <div class="annoucement"></div>
+    </main>
 
-    <div class="results">
-
-    </div>
-    <div class="annoucement">
-
-    </div>
     <script src="./script.js"></script>
 </body>
 

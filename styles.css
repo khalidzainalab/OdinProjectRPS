@@ -1,25 +1,82 @@
-:root{
+:root {
     --header: #F6E3BA;
 }
 
 * {
     margin: 0;
-    padding : 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 /* header */
-.title{
+.title {
     font-family: "Pacifico", cursive;
     font-size: 48px;
     font-weight: 200;
 }
 
-.header{
-    display:flex;
+.header {
+    display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     gap: 32px;
     padding: 8px;
     background-color: var(--header);
+}
+
+/* main */
+.main {
+    margin: 5vh;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.description {
+    display: block;
+    font-size: 28px;
+    font-family: "Permanent Marker";
+}
+
+button {
+    padding: 8px;
+}
+
+.image {
+    width: 200px;
+    height: 200px;
+}
+
+
+/* enemy profile */
+.enemy-profile{
+    display:flex;
+    padding-top: 1vh;
+}
+.divider {
+    margin-top: 5vh;
+    border-bottom: 1px solid black;
+}
+
+.small {
+    font-size: 24px;
+}
+
+.description-container{
+    padding-left: 2vw;
+    margin-top: 5vh;
+}
+
+.profile-icon {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.description.small {
+    display: block;
+    padding-left: 4px;
 }
