@@ -52,19 +52,6 @@ function playRound(humanChoice, computerChoice) {
 }
 
 
-
-// function playGame(){
-//     let humanSelection 
-//     while (humanScore < 5 && computerScore < 5){
-//         let humanSelection = getHumanChoice();
-//         let computerSelection = getComputerChoice();
-//         playRound(humanSelection, computerSelection)
-//         console.log("Starting new Round")
-//     }
-// }
-
-// playGame();
-
 /* UI */
 
 const buttons = document.querySelectorAll("button");
