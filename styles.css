@@ -119,3 +119,7 @@ button:hover {
 #enemy[src] {
     display: block;
 }
+
+.results.description{
+    padding-top: 20px;
+}

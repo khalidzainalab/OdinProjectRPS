@@ -82,13 +82,13 @@ buttons.forEach((button) => {
 
         playRound(humanValue, computerValue);
         if (humanScore == 5) {
-            results.textContent = 'You have won! reseting back to 0';
+            results.textContent = 'You have won! resetting back to 0';
             humanScore = 0;
             computerScore = 0;
             humanScoreText.textContent = humanScore;
             computerScoreText.textContent = computerScore;
         } else if (computerScore == 5) {
-            results.textContent = 'You have lost! reseting back to 0';
+            results.textContent = 'You have lost! resetting back to 0';
             humanScore = 0;
             computerScore = 0;
             humanScoreText.textContent = humanScore;
